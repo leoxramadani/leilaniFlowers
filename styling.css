@@ -1,0 +1,721 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-color: rgb(246, 230, 233);
+    display:flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.mainContainer{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0;
+    position:relative;
+}
+.header{
+    z-index:1;
+    width:100vw;
+    height:88vh;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    background-color: rgb(236, 216, 236);
+    transition:.5s;
+    -webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.header::before{
+  content:'';
+  position:absolute;
+  top:15px;
+  left:15px;
+  background-image: url('./family-flowers.regular.png') ;
+  z-index:9999999;
+  width:300px;
+  height:300px;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.header::after{
+  content:'';
+  position:absolute;
+  bottom:-150px;
+  right:15px;
+  background-image: url('./kingthings-annex.extra-bold.png') ;
+  z-index:9999999;
+  width:300px;
+  height:300px;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+@keyframes bgcolor {
+  0% {
+      background-color: #c8dae7
+  }
+
+  30% {
+      background-color: #b6dea3
+  }
+
+  60% {
+      background-color: #f2c9ae
+  }
+
+  90% {
+      background-color: rgb(245, 191, 200)
+  }
+
+  100% {
+      background-color: #c7b0df
+  }
+}
+#firstFlower{
+    width:100vw;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+.firstBanner{
+    width:25vw;
+    height:10vh;
+    position:absolute;
+    z-index:5;
+    top:10vh;
+    left:5vw;
+}
+.firstBanner img{
+    width:100%;
+    height:100%;
+}
+.secondBanner{
+    width:30vw;
+    height:15vh;
+    position:absolute;
+    z-index:5;
+    top:30vh;
+    left:20vw;
+}
+.secondBanner img{
+    width:100%;
+    height:100%;
+}
+.Firstquote{
+    position:absolute;
+    z-index:5;
+    top:20vh;
+    width:80vw;
+    left:10vw;
+}
+.bannerExtra{
+    width:60vw;
+    height:90vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(106deg, rgb(243, 209, 233) 0%, transparent 100%);
+    z-index:3;
+}
+.Firstquote h3{
+    font-size:22px;
+    font-style: italic;
+    font-family: serif;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;    
+}
+.Promos{
+    padding-top:25vh;
+    padding-bottom:25vh;
+    width:100vw;
+    height:auto;
+    background-color: rgb(220, 210, 212);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+}
+.Promos h2{
+    position:absolute;
+    text-align: center;
+    top:-20px;
+    font-size:30px;
+    font-style: italic;
+    color: #e84b77;
+}
+.firstPromo{
+width:300px;
+height:450px;
+background: rgb(241,233,239);
+background: linear-gradient(172deg, transparent 40%, rgb(249, 220, 220) 100%);
+border-radius: 15px;
+box-shadow:10px 10px 20px gray;
+border-bottom:2px solid gray;
+border-right:2px solid gray;
+}
+.secondPromo{
+    border-radius: 15px;
+    width:300px;
+    height:450px;
+    background: rgb(241,233,239);
+    box-shadow:10px 10px 20px gray;
+border-bottom:2px solid gray;
+border-right:2px solid gray;
+background: linear-gradient(172deg, transparent 40%, rgb(192, 245, 219) 100%);
+}
+.thirdPromo{
+    border-radius: 15px;
+    width:300px;
+    height:450px;
+    background: rgb(241,233,239);
+    box-shadow:10px 10px 20px gray;
+    border-bottom:2px solid gray;
+    border-right:2px solid gray;
+    background: linear-gradient(172deg, transparent 40%, rgb(225, 212, 238) 100%);
+}
+.quote{
+    width:100%;
+    height:10%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+}
+.quote h3{
+font-size:16px;
+font-style: italic;
+color:crimson;
+margin-top:0px;
+text-align:center;
+}
+.imageHolder{
+    width:95%;
+    height:260px;
+    margin-left:2.5%;
+    position:relative;
+    margin-top:10px;
+}
+.imageHolder img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.infoHolder{
+    width:100%;
+    height:auto;
+    padding:2px;
+    position:relative;
+}
+.infoHolder h3{
+    font-size:13px;
+    text-align: center;
+}
+.infoHolder::after{
+    content: '';
+    position:absolute;
+    width:90px;
+    height:20px;
+    background-image: url('./family-flowers.regular.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:90px;
+    left:10px;
+}
+.infoHolder::before{
+    content:'';
+    position:absolute;
+    width:90px;
+    height:60px;
+    background-image: url('./pinkFlower.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    right:0px;
+    top:70px;
+    rotate:20deg;
+}
+.newsletter{
+    margin-top:1vh;
+    width:100vw;
+    height:10vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.f1{
+width:20%;
+height:auto;
+background-color: #f0ec9d;
+position:relative;
+display:flex;
+flex-direction: column;
+}
+.f1 h4{
+    font-size:25px;
+    color:crimson;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    padding:0;
+    margin:0;
+}
+.f1 h3{
+    font-size:18px;
+    text-align: center;
+    font-family:monospace;
+    margin-top:0px;
+    padding:0;
+    margin:0;
+    color:rgb(112, 57, 104);
+}
+.f2{
+    width:20%;
+    height:10vh;
+    background-color: rgb(204, 253, 204);
+    display:flex;
+    flex-direction: column;
+}
+.f2 h4{
+    font-size:22px;
+    color:crimson;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    padding:0;
+    margin:0;
+    text-shadow: 1px 1px black;
+}
+.f2 h3{
+    font-size:18px;
+    text-align: center;
+    font-family:monospace;
+    margin-top:-25px;
+    color:rgb(112, 57, 104);
+    padding:0;
+    margin:0;
+  }
+.f3{
+    width:20%;
+    height:10vh;
+    background-color:#fdc9d7;
+    display:flex;
+    flex-direction: column;
+}
+.f3 h4{
+    font-size:22px;
+    text-shadow: 1px 1px black;
+    color:crimson;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    padding:0;
+    margin:0;
+}
+.f3 h3{
+    font-size:18px;
+    text-align: center;
+    font-family:monospace;
+    margin-top:-25px;
+    color:rgb(112, 57, 104);
+    padding:0;
+    margin:0;
+}
+.f4{
+    width:20%;
+    height:10vh;
+    background-color: #b4aaec;
+    display:flex;
+    flex-direction: column;
+}
+.f4 h4{
+  font-size:22px;
+  text-shadow: 1px 1px black;
+  color:crimson;
+  text-align: center;
+  font-family: cursive;
+  font-style: italic;
+  padding:0;
+  margin:0;
+}
+.f4 h3{
+    font-size:18px;
+    text-align: center;
+    font-family:monospace;
+    margin-top:-25px;
+    color:rgb(112, 57, 104);
+    padding:0;
+    margin:0;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+.mySlides img {vertical-align: middle; }
+#thisimg1,#thisimg2,#thisimg3,#thisimg4,#thisimg5,#thisimg6{
+  max-height:80vh;
+}
+
+.slideshow-container img{
+    max-height:70vh;
+}
+/* Slideshow container */
+.slideshow-container {
+    width:100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.photo-grid{
+    border-top:4px solid crimson;
+    width:100%;
+    height:auto;
+    padding:5px;
+    background-color: rgb(246, 230, 233);
+}
+.photo-grid h2{
+    text-align: center;
+    font-size:30px;
+    font-style: italic;
+    color: #e84b77;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border:1px solid red;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .client-review{
+    padding-top:25vh;
+    padding-bottom:25vh;
+    width:100%;
+    height:100vh;
+    position:relative;
+  }
+  .client-review img{
+    filter:blur(15px);
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .reviews{
+    width:80vw;
+    height:auto;
+    padding:10px;
+    z-index:999;
+    position:relative;
+    left:10vw;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .firstReview{
+    width:350px;
+    height:400px;
+    background-color: rgba(57, 57, 56, 0.408);
+    border-top-right-radius: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+  }
+  .bioPart{
+    width:90%;
+    margin-left:5%;
+    height:190px;
+    margin-top:30px;
+    background-color: rgba(0, 0, 0, 0.622);
+    border-radius: 25px;
+  }
+  .imagePart{
+    width:100%;;
+    height:150px;
+    padding:10px;
+    position:relative;
+  }
+  .imagePart img{
+    width:150px;
+    height:100%;
+    filter:blur(0px);
+    border-radius: 50%;
+    border-top:5px solid skyblue;
+    border-left:5px solid greenyellow;
+    border-bottom:5px solid crimson;
+    border-right:5px solid yellow;
+    margin-left:20px;
+    margin-top:20px;
+  }
+  .name{
+    display:flex;
+    justify-content: flex-start;
+    margin-left:10px;
+    color:white;
+  }
+  .name h3{
+    border-bottom:2px solid crimson;
+  }
+  .location{
+    margin-top:-20px;
+    font-size:12px;
+    margin-left:10px;
+    color:white;
+    display:flex;
+    position:relative;
+    flex-direction: row;
+  }
+  .location h3{
+    border-bottom:2px solid crimson;
+  }
+  .reviewQuote{
+    margin-left:10px;
+    color:white;
+  }
+  .reviewQuote h4{
+    margin-top:-30px;
+    font-size:12px;
+  }
+  .secondReview{
+    width:350px;
+    height:400px;
+    background-color: rgba(57, 57, 56, 0.408);
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .bioPart2{
+    width:90%;
+    margin-left:5%;
+    height:190px;
+    margin-top:30px;
+    background-color: rgba(0, 0, 0, 0.622);
+    border-radius: 25px;
+  }
+  .imagePart2{
+    width:100%;;
+    height:150px;
+    padding:10px;
+    position:relative;
+  }
+  .imagePart2 img{
+    width:150px;
+    height:100%;
+    filter:blur(0px);
+    border-radius: 50%;
+    border-top:5px solid crimson;
+    border-left:5px solid yellow;
+    border-bottom:5px solid skyblue;
+    border-right:5px solid greenyellow;
+
+    margin-left:25%;
+    margin-top:15px;
+
+  }
+  .name2{
+    display:flex;
+    justify-content: center;
+    margin-left:10px;
+    color:white
+  }
+  .name2 h3{
+    border-bottom:2px solid crimson;
+    text-align: center;
+    
+  }
+  .location2{
+    margin-top:-20px;
+    font-size:12px;
+    margin-left:10px;
+    color:white;
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .location2 h3{
+    text-align: center;
+    border-bottom:2px solid crimson;
+  }
+  .reviewQuote2{
+    margin-left:10px;
+    color:white;
+  }
+  .reviewQuote2 h4{
+    margin-top:-30px;
+    font-size:12px;
+  }
+  .thirdReview{
+    width:350px;
+    height:400px;
+    background-color: rgba(57, 57, 56, 0.408);
+    border-top-right-radius: 200px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+  }
+  .bioPart3{
+    width:90%;
+    margin-left:5%;
+    height:190px;
+    margin-top:30px;
+    background-color: rgba(0, 0, 0, 0.622);
+    border-radius: 25px;
+  }
+  .imagePart3{
+    width:100%;;
+    height:150px;
+    padding:10px;
+    position:relative;
+    
+  }
+  .imagePart3 img{
+    width:150px;
+    height:100%;
+    filter:blur(0px);
+    border-radius: 50%;    
+    border-top:5px solid yellow;
+    border-left:5px solid skyblue;
+    border-bottom:5px solid greenyellow;
+    border-right:5px solid crimson;
+    margin-left:20px;
+    margin-top:20px;
+  }
+  .name3{
+    display:flex;
+    justify-content: flex-start;
+    margin-left:10px;
+    color:white;
+  }
+  .name3 h3{
+    border-bottom:2px solid crimson;
+    
+  }
+  .location3{
+    margin-top:-20px;
+    font-size:12px;
+    margin-left:10px;
+    color:white;
+    display:flex;
+    position:relative;
+    flex-direction: row;
+  }
+  .location3 h3{
+    border-bottom:2px solid crimson;
+  }
+  .reviewQuote3{
+    margin-left:10px;
+    color:white;
+  }
+  .reviewQuote3 h4{
+    margin-top:-30px;
+    font-size:12px;
+  }
