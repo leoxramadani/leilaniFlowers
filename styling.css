@@ -29,30 +29,6 @@ body{
     transition:.5s;
     overflow-x: hidden;
 }
-.header::before{
-  content:'';
-  position:absolute;
-  top:15px;
-  left:15px;
-  background-image: url('./family-flowers.regular.png') ;
-  z-index:9999999;
-  width:200px;
-  height:200px;
-  background-size:contain;
-  background-repeat: no-repeat;
-}
-.header::after{
-  content:'';
-  position:absolute;
-  bottom:-120px;
-  right:15px;
-  background-image: url('./kingthings-annex.extra-bold.png') ;
-  z-index:9999999;
-  width:200px;
-  height:200px;
-  background-size:contain;
-  background-repeat: no-repeat;
-}
 #firstFlower{
     width:100vw;
     height:100%;
