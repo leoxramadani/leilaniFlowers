@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styling.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -139,42 +141,34 @@
             
         </div>
     
+        <h2 id="ourProducts">𝑶𝒖𝒓 𝒑𝒓𝒐𝒅𝒖𝒄𝒕𝒔</h2>
         <div class="photo-grid">
-            <h2>𝑜𝓊𝓇 𝓅𝓇𝑜𝒹𝓊𝒸𝓉𝓈</h2>
-            <div class="row"> 
-                <div class="column">
-                  <img src="./b1.jpg" style="width:100%">
-                  <img src="./b2.jpg" style="width:100%">
-                  <img src="./b3.jpg" style="width:100%">
-                  <img src="./b4.jpg" style="width:100%">
-                  <img src="./b5.jpg" style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="./b6.jpg" style="width:100%">
-                  <img src="./b7.png" style="width:100%">
-                  <img src="./b8.png" style="width:100%">
-                  <img src="./b9.png" style="width:100%">
-                  <img src="./b10.png" style="width:100%">
-                </div>  
-                <div class="column">
-                  <img src="./b11.jpg" style="width:100%">
-                  <img src="./b12.png" style="width:100%">
-                  <img src="./b13.png" style="width:100%">
-                  <img src="./b14.png" style="width:100%">
-                  <img src="./b15.png" style="width:100%">
-                </div>
-                <div class="column">
-                  <img src="./b16.jpg" style="width:100%">
-                  <img src="./b17.jfif" style="width:100%">
-                  <img src="./b18.jpg" style="width:100%">
-                  <img src="./b19.jpg" style="width:100%">
-                  <img src="./b20.jpg" style="width:100%">
-                </div>
-              </div>
+            <img src="/b1.jpg" style="width:100%" id="extraIMG">
+            <img src="/b2.jpg" style="width:100%">
+            <img src="/b3.jpg" style="width:100%" id="extraIMG">
+            <img src="/b4.jpg" style="width:100%">
+            <img src="/b5.jpg" style="width:100%" id="extraIMG">
+            <img src="/b6.jpg" style="width:100%" id="extraIMG">
+            <img src="/b7.png" style="width:100%">
+            <img src="/b8.png" style="width:100%" id="extraIMG">
+            <img src="/b9.png" style="width:100%">
+            <img src="/b10.png" style="width:100%" id="extraIMG">
+            <img src="/b11.jpg" style="width:100%" id="extraIMG">
+            <img src="/b12.png" style="width:100%">
+            <img src="/b13.png" style="width:100%" id="extraIMG">
+            <img src="/b14.png" style="width:100%">
+            <img src="/b15.png" style="width:100%" id="extraIMG">
+            <img src="/b16.jpg" style="width:100%" id="extraIMG">
+            <img src="/b17.jfif" style="width:100%">
+            <img src="/b18.jpg" style="width:100%" id="extraIMG">
+            <img src="/b19.jpg" style="width:100%">
+            <img src="/b20.jpg" style="width:100%" id="extraIMG">
+          
         </div>
 
+        <h2 id="ourProducts">𝑪𝒍𝒊𝒆𝒏𝒕 𝒓𝒆𝒗𝒊𝒆𝒘𝒔</h2>
         <div class="client-review">
-            <img src="./colorful-hd-flowers.jpg">
+            <!-- <img src="./colorful-hd-flowers.jpg"> -->
             <div class="reviews">
                 <div class="firstReview">
                     <div class="imagePart">
@@ -230,12 +224,47 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="fourthReview">
+                    <div class="imagePart4">
+                        <img src="./profile3.jfif" id="thisPic">
+                    </div>
+                    <div class="bioPart4">
+                        <div class="name4">
+                            <h3>James</h3>
+                            <h3> <b>Smith</b></h3>
+                        </div>
+                        <div class="location4">
+                            <h3>London, UK</h3>
+                        </div>
+                        <div class="reviewQuote4">
+                            <h3 >𝑄𝑢𝑜𝑡𝑒:</h3><br>
+                            <h4>Fast devilery! The quality is on point.<br> 10/10 would recommend.</h4>
+                        </div>
+                    </div>
+                </div>
+
+
                 
             </div>
         </div>
-
+        <div class="findUs">
+            <div class="map">
+                <h1>𝐶𝑜𝑛𝑡𝑎𝑐𝑡 𝑢𝑠</h1>
+                <img src="./map.PNG" id="map">
+            </div>
+            <div class="ourLocation">
+                <div class="ourNumber"><i class="fa fa-phone"></i><span>+38971/799-241</span></div>
+                <div class="ourAddress"><i class="fa fa-map-marker"></i> <span>Zurich, Switzerland</span></div>
+               <div class="ourFacebook"><i class="fa fa-facebook-f"></i><span>Leilani Flowers - Ch</span></div>
+                <div class="ourInstagram"><i class="fa fa-instagram"></i><span>LeilaniFlowers-ch</span></div>
+            </div>
+        </div>
     </div>
     <script>
+
+
         var elem1 = document.getElementById("thisimg1");
         var elem2 = document.getElementById("thisimg2");
         var elem3 = document.getElementById("thisimg3");
@@ -248,14 +277,20 @@
         var firstPromos = document.getElementById("firstPromos");
         var thirdPromo = document.getElementById("thirdPromo");
         var fourthPromo = document.getElementById("fourthPromo");
+        var extraIMG = document.getElementById("extraIMG");
 
-            if (typeof screen.orientation === 'undefined') { 
+            if (typeof screen.orientation !== 'undefined') { 
                 elem1.setAttribute("src","./Amsterdam_Michlers.png");
                 elem2.setAttribute("src","./00072b321893949362992286d24429cb.png");
                 elem3.setAttribute("src","./b2.jpg");
                 elem4.setAttribute("src","./b3.jpg");
                 elem5.setAttribute("src","./b4.jpg");
                 elem6.setAttribute("src","./b5.jpg");
+                
+                document.getElementById("map").style.height="50vh";
+                
+                document.getElementById("map").style.width="40vh";
+                document.getElementById("thisPic").style.marginLeft="100px";
 
                 Promos.style.paddingTop="10vh";
                 firstPromos.style.marginBottom="30px";
@@ -263,6 +298,7 @@
                 thirdPromo.style.marginBottom="30px";
                 fourthPromo.style.marginBottom="30px";
                 Promos.style.paddingBottom="10vh";
+                extraIMG.style.display="none"
             }
 
 
@@ -284,7 +320,7 @@
           }
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
+          setTimeout(showSlides, 2500); // Change image every 2 seconds
         }
         </script>
         
