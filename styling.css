@@ -541,7 +541,8 @@ body {font-family: Verdana, sans-serif;}
   .bioPart{
     width:90%;
     margin-left:5%;
-    height:190px;
+      height:auto;
+    padding:5px;
     margin-top:30px;
     background-color: rgba(0, 0, 0, 0.622);
     border-radius: 25px;
@@ -610,7 +611,8 @@ body {font-family: Verdana, sans-serif;}
   .bioPart2{
     width:90%;
     margin-left:5%;
-    height:190px;
+      height:auto;
+    padding:5px;
     margin-top:30px;
     background-color: rgba(0, 0, 0, 0.622);
     border-radius: 25px;
@@ -683,7 +685,8 @@ body {font-family: Verdana, sans-serif;}
   .bioPart3{
     width:90%;
     margin-left:5%;
-    height:190px;
+    height:auto;
+    padding:5px;
     margin-top:30px;
     background-color: rgba(0, 0, 0, 0.622);
     border-radius: 25px;
